@@ -12,21 +12,22 @@ body {
   background-color: #45474b;
 }
 .container {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .header {
+  margin-top: 20px;
   width: 98%;
-  height: 15%;
+  height: 15vh;
   background-color: #f4ce14;
   display: flex;
   align-items: center;
   justify-content: left;
-  box-shadow: inset 5px 10px 10px rgba(0, 0, 0, 0.3),inset -2px -5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 5px 10px 10px rgba(0, 0, 0, 0.3),
+    inset -2px -5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 10px 20px;
 }
@@ -39,16 +40,66 @@ body {
   border-radius: 20px;
   padding: 10px;
   max-height: 98%;
-  text-align: center;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 300ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header h2:hover {
   transform: scale(0.96);
 }
 .anime-pic-container {
-  height: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  min-height: 100%;
   width: 100%;
+  column-count: 6; 
+  column-gap: 10px;
+}
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 400px;
+  width: 300px;
+  /* margin: 10px; */
+  break-inside: avoid; /* Prevents a card from breaking across columns */
+  margin-bottom: 10px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  border-radius: 10px;
+  height: 7%;
+  width: 70%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: white;
+}
+
+.categories label {
+  cursor: pointer;
+  background-color: #495e57;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease-in-out;
+}
+.active {
+  background-color: #f4ce14 !important;
+  color: black;
+  transform: scale(1.2);
 }

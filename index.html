@@ -3,19 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anime-Pics-Generator</title>
+    <title>Anime-Gifs-Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container" id="container">
       <div class="header">
-        <h2>Anime Pics Generator</h2>
+        <h2>Anime Gifs Generator</h2>
         <img
           src="https://media.tenor.com/cyORI7kwShQAAAAi/shigure-ui-dance.gif"
           alt="anime girl dancing"
         />
+        <div class="categories" id="categories">
+          <label>
+            <input hidden type="radio" name="options" value="hug" />
+            Hug
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="smile" />
+            Smile
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="wave" />
+            Wave
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="highfive" />
+            Highfive
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="handhold" />
+            Handhold
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="nom" />
+            Nom
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="slap" />
+            Slap
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="bite" />
+            Bite
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="glomp" />
+            Glomp
+          </label>
+
+          <label>
+            <input hidden type="radio" name="options" value="dance" />
+            Dance
+          </label>
+        </div>
       </div>
-      <div class="categories" id="categories"></div>
+
       <div class="anime-pic-container" id="anime-pic-container"></div>
     </div>
     <script src="index.js"></script>
