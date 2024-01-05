@@ -25,6 +25,3 @@ options.forEach((option) => {
     option.parentNode.classList.add("active");
   });
 });
-
-
-
