@@ -128,6 +128,9 @@ body {
   transition: all 300ms ease-in-out;
   font-size: small;
 }
+.categories label:hover {
+  transform: scale(0.96);
+}
 .active {
   background-color: #f4ce14 !important;
   color: black;
@@ -226,10 +229,16 @@ body {
   }
 }
 @media (min-width: 1201px) {
+  .header h2 {
+    font-size: larger;
+  }
   .categories {
     width: 70%;
     background-color: transparent;
     box-shadow: none;
+  }
+  .categories label {
+    font-size: medium;
   }
 
   .scrollbar-wrapper::-webkit-scrollbar {
